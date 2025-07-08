@@ -50,7 +50,7 @@ p2 <- ggplot(pca_train, aes(x=PC1, y=PC2, color=label)) +
   labs(title="PCA of Training Set")
 
 #--------------------------------------------   Model for Inception-V3
-set.seed(42)
+set.seed(235)
 model <- randomForest(label ~ ., data=train, ntree=100, importance=TRUE)
 print(model)
 
@@ -131,7 +131,7 @@ ggsave("class_distribution_all.png", p_dist, width=6, height=4)
 
 
 # Simulated Training History marking here 
-set.seed(42)
+set.seed(235)
 epochs <- 1:45
 history <- data.frame(
   epoch = epochs,
@@ -179,7 +179,7 @@ p_f1 <- ggplot(history, aes(x=epoch)) +
   labs(title="F1-Score", y=NULL, color=NULL)
 
 # ------------------------------------------------------------
-# 🖼 Arrange & save
+#  Arrange & save
 # ------------------------------------------------------------
 library(gridExtra)
 png("training_curves.png", width=1000, height=800)
@@ -195,7 +195,7 @@ dev.off()
 # calling Libraries
 
 library(reshape2)
-library(ggplot2)
+
 
 # correlations 
 corr_mat <- cor(train[, feature_cols[1:100]])
@@ -227,7 +227,6 @@ ggplot(importance_df, aes(x=reorder(Feature, Importance), y=Importance)) +
   theme_minimal()
 
 
-library(pROC)
 
 roc_obj <- roc(test$label, pred_probs)
 
@@ -239,7 +238,6 @@ plot(ci, type="shape", col="#1c61b6AA")
 
 #
 
-library(ggplot2)
 
 conf_mat_df <- as.data.frame(conf_mat)
 colnames(conf_mat_df) <- c("Predicted", "Actual", "Freq")
