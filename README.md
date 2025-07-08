@@ -26,7 +26,8 @@ Detect pneumonia vs. normal chest X-ray on PneumoniaMNIST using pretrained Incep
 ##  3 Appropriate Evaluation Metrics
 - **Accuracy**: overall correctness
 - **Recall (Sensitivity)**: detecting pneumonia cases correctly as in medical diagnosis, false negatives(missing pneumonia) more rsikier.
-- **ROC-AUC**: has discriminative ability and especially useful when class distributions may slightly change.
+- **F1‑Score**: Balances precision and recall, making it well‑suited for imbalanced medical datasets and reflecting overall diagnostic effectiveness.
+- (while we could have used **ROC-AUC** which has discriminative ability and especially useful when class distributions may slightly change.)
 
 ---
 
