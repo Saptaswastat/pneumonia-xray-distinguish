@@ -38,4 +38,4 @@ Detect pneumonia vs. normal chest X-ray on PneumoniaMNIST using pretrained Incep
 install.packages(c("randomForest", "ggplot2", "dplyr", "pROC", "umap", "Rtsne", "reshape2", "gridExtra", "RColorBrewer"))
 
 # Run R code
-source("scripts/detect_pneumonia_R.R")
+source("Training_&_evaluation_script/data/detect_pneumonia_R.R")
