@@ -1,0 +1,18 @@
+# R packages
+randomForest
+ggplot2
+dplyr
+pROC
+umap
+Rtsne
+reshape2
+gridExtra
+RColorBrewer
+
+# Python packages
+numpy
+pandas
+matplotlib
+scikit-learn
+h5py          
+tensorflow    
