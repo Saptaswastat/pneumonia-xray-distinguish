@@ -8,7 +8,7 @@ Detect pneumonia vs. normal chest X-ray on PneumoniaMNIST using pretrained Incep
 ##  Dataset
 - **PneumoniaMNIST** (part of MedMNIST collection)
 - original data pneumoniamnist.npz
-- Preprocessed into CSVs:  
+- Extracted and converted to CSVs:  
   - `pneumoniamnist_train.csv`  
   - `pneumoniamnist_val.csv`  
   - `pneumoniamnist_test.csv`
